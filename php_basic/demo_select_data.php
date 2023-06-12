@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        table,th,tr,td{
-           border-collapse: collapse;
+        table, th, tr, td {
+            border-collapse: collapse;
             border: 1px solid;
         }
     </style>
@@ -31,8 +31,8 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     echo "<table ><tr><th>ID</th><th>Name</th><th>Age</th><th>Gender</th><th>Address</th><th>Position</th></tr>";
     // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "<tr><td>".$row["id"]."</td><td>".$row["name"]."</td><td> ".$row["age"]."</td><td>".$row["gender"]."</td><td>".$row["address"]."</td><td>".$row["position"]."</td></tr>";
+    while ($row = $result->fetch_assoc()) {
+        echo "<tr><td>" . $row["id"] . "</td><td>" . $row["name"] . "</td><td> " . $row["age"] . "</td><td>" . $row["gender"] . "</td><td>" . $row["address"] . "</td><td>" . $row["position"] . "</td></tr>";
     }
     echo "</table>";
 } else {
@@ -41,4 +41,7 @@ if ($result->num_rows > 0) {
 $conn->close();
 ?>
 </body>
+<div>
+
+</div>
 </html>

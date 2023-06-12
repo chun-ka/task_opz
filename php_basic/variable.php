@@ -44,7 +44,6 @@ $b = ( int )$a;
 echo $b;
 
 const cst = [ 1, 2, 3 ];
-
 $time = date( 'H' );
 if ( $time>'20' ) {
     echo $time;
